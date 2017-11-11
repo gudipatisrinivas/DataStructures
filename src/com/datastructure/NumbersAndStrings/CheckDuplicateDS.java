@@ -18,7 +18,7 @@ import java.util.Set;
 public class CheckDuplicateDS {
 
 	public static boolean checkDuplicateUsingSet(String[] input) {
-		List inputList = Arrays.asList(input);
+		List<String> inputList = Arrays.asList(input);
 		Set inputSet = new HashSet(inputList);
 		if (inputSet.size() < inputList.size()) {
 			return true;
