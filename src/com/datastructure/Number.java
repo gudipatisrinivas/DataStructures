@@ -1,4 +1,4 @@
-package com.master.datastructure;
+package com.datastructure;
 
 public class Number {
 
