@@ -7,7 +7,7 @@
  *
  * 
  */
-package com.datastructure;
+package com.datastructure.NumbersAndStrings;
 public class FindDuplicateValue {
 	public static boolean bruteforce(String[] input) {
 		for (int i = 0; i < input.length; i++) {

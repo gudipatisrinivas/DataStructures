@@ -1,5 +1,5 @@
 
-package com.datastructure;
+package com.datastructure.NumbersAndStrings;
 
 import java.util.Arrays;
 import java.util.HashSet;
