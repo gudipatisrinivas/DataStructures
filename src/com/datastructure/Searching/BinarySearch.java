@@ -17,20 +17,20 @@ public class BinarySearch {
 	 * @param pivot
 	 */
 	public int runBinarySearchIteratively(int[] sortedArray, int key, int low, int high) {
-			    int index = Integer.MAX_VALUE;
-			     
-			    while (low <= high) {
-			        int mid = (low + high) / 2;
-			        System.out.println("Sorted Array"+sortedArray[mid]+"Key"+key);
-			        if (sortedArray[mid] < key) {
-			            low = mid + 1;
-			        } else if (sortedArray[mid] > key) {
-			            high = mid - 1;
-			        } else if (sortedArray[mid] == key) {
-			            index = mid;
-			            break;
-			        }
-			    }
-			    return index;
+		int index = Integer.MAX_VALUE;
+
+		while (low <= high) {
+			int mid = (low + high) / 2;
+			System.out.println("Sorted Array" + sortedArray[mid] + "Key" + key);
+			if (sortedArray[mid] < key) {
+				low = mid + 1;
+			} else if (sortedArray[mid] > key) {
+				high = mid - 1;
+			} else if (sortedArray[mid] == key) {
+				index = mid;
+				break;
 			}
+		}
+		return index;
+	}
 }
