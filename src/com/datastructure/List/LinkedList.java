@@ -4,16 +4,16 @@ import java.util.Iterator;
 
 import com.datastructure.IList.List;
 
-public class LinkedList<T> implements List<T> {
+public class LinkedList<E> implements List<E> {
 	
 	Node<?> firstLink;
 	Node<?> currentLink;
 	
 	@Override
-	public void add(T o) {
+	public void add(E o) {
 		// TODO Auto-generated method stub
 		
-		Node<T> newLink=new Node<>(o);
+		Node<E> newLink=new Node<>(o);
 		if(firstLink==null) {
 			firstLink=newLink;
 			currentLink=newLink;
@@ -52,7 +52,7 @@ public class LinkedList<T> implements List<T> {
 	}
 
 	@Override
-	public boolean contains(T o) {
+	public boolean contains(E o) {
 		// TODO Auto-generated method stub
 		return false;
 	}

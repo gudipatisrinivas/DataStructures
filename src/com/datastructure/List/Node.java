@@ -1,11 +1,11 @@
 package com.datastructure.List;
 
-public class Node<T> {
+public class Node<E> {
 	
-	T obj;
+	E obj;
 	Node next;
-	
-	public Node(T o) {
+
+	public Node(E o) {
 		// TODO Auto-generated constructor stub
 		this.obj=o;
 		this.next=null;
@@ -13,7 +13,7 @@ public class Node<T> {
 	public String getObj() {
 		return obj.toString();
 	}
-	public void setObj(T obj) {
+	public void setObj(E obj) {
 		this.obj = obj;
 	}
 	@Override
